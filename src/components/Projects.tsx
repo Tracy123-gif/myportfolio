@@ -34,18 +34,18 @@ const Projects: React.FC = () => {
       link: "https://github.com"
     },
     {
-      title: "Social Media Dashboard",
-      description: "Unified social media management platform with content scheduling, analytics, and multi-platform posting capabilities.",
+      title: "Ecommerce Website",
+      description: "A functional e-commerce frontend website with product listings, shopping cart, and payment gateway integration.",
       image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      technologies: ["Angular", "Node.js", "MongoDB", "Express"],
-      link: "https://github.com"
+      technologies: ["Reactjs", "TailwindCSS"],
+      link: "https://ecommerce-website-7zusfgdlk-tracy123-gifs-projects.vercel.app/"
     },
     {
-      title: "AI Code Editor",
-      description: "Next-generation code editor with AI-powered completions, real-time collaboration, and integrated debugging tools.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      technologies: ["TypeScript", "Monaco Editor", "OpenAI API", "Electron"],
-      link: "https://github.com"
+      title: "Push to Profit",
+      description: "Business Landing page with a clean and modern design, showcasing services, testimonials, and a contact form.",
+      image: "https://res.cloudinary.com/dvoucuthp/image/upload/v1748000548/Screenshot_2025-05-23_123935_zmlpnu.png",
+      technologies: ["ReactJs", "TailwindCSS"],
+      link: "https://www.pushtoprofit.ng/"
     }
   ];
 
