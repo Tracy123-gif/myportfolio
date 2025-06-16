@@ -7,6 +7,7 @@ import Skills from '@/components/Skills';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import { Toaster } from '@/components/ui/toaster';
+import AboutMe from '@/components/AboutMe';
 
 const Index = () => {
   useEffect(() => {
@@ -41,6 +42,7 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
+        <AboutMe />
         <Projects />
         <Skills />
         <Contact />

@@ -7,6 +7,11 @@ const Skills: React.FC = () => {
       name: "React",
       icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",
     },
+     {
+      name: "JavaScript",
+      icon: "https://res.cloudinary.com/dvoucuthp/image/upload/v1748486954/js_afrmvg.png",
+    },
+
     {
       name: "TypeScript",
       icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png",
@@ -19,14 +24,23 @@ const Skills: React.FC = () => {
       name: "Next.js",
       icon: "https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png",
     },
-    {
-      name: "Vue.js",
-      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/512px-Vue.js_Logo_2.svg.png",
+     {
+      name: "MongoDB",
+      icon: "https://res.cloudinary.com/dvoucuthp/image/upload/v1748488713/mongodb2_izmdjz.png",
     },
     {
-      name: "Three.js",
-      icon: "https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png",
-    }
+      name: "Chakra UI",
+      icon: "https://res.cloudinary.com/dvoucuthp/image/upload/v1748489077/chakra_n4nwxq.png",
+    },
+    {
+      name: "Git",
+      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/512px-Git-logo.svg.png",
+    },
+    {
+      name: "GitHub",
+      icon: "https://res.cloudinary.com/dvoucuthp/image/upload/v1748488873/github_gqysvf.png",
+    },
+
   ];
 
   return (

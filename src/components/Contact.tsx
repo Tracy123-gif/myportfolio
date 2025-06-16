@@ -31,6 +31,8 @@ const Contact: React.FC = () => {
       setFormData({ name: '', email: '', message: '' });
       setIsSubmitting(false);
     }, 1000);
+
+    
   };
 
   return (

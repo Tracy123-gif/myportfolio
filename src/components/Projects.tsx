@@ -8,9 +8,9 @@ const Projects: React.FC = () => {
     {
       title: "E-Commerce Dashboard",
       description: "A modern React dashboard with real-time analytics, inventory management, and payment processing integration.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
-      link: "https://github.com"
+      image: "https://res.cloudinary.com/dvoucuthp/image/upload/v1748486530/Screenshot_2025-05-29_034148_ybzlsi.png",
+      technologies: ["React", "JavaScript", "Tailwind CSS", "Chakra UI", "CSS"],
+      link: "https://ufuon-admin-iota.vercel.app/"
     },
     {
       title: "Task Management App",
@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
     {
       title: "Ecommerce Website",
       description: "A functional e-commerce frontend website with product listings, shopping cart, and payment gateway integration.",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/dvoucuthp/image/upload/v1748486261/Screenshot_2025-05-29_032924_e4wytc.png",
       technologies: ["Reactjs", "TailwindCSS"],
       link: "https://ecommerce-website-7zusfgdlk-tracy123-gifs-projects.vercel.app/"
     },
