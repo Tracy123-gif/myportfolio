@@ -7,7 +7,7 @@ import { Mail, Send, MessageSquare } from 'lucide-react';
 const Contact: React.FC = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: '',
+    fullName: '',
     email: '',
     message: ''
   });
@@ -18,22 +18,48 @@ const Contact: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+
+
+
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    const res = await fetch('https://portemailsender1.onrender.com/contact/send-message', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
       toast({
         title: "Message sent!",
         description: "Thanks for reaching out. I'll get back to you soon.",
       });
-      setFormData({ name: '', email: '', message: '' });
-      setIsSubmitting(false);
-    }, 1000);
+      setFormData({ fullName: '', email: '', message: '' });
+    } else {
+      toast({
+        title: "Something went wrong!",
+        description: data.error || "Please try again later.",
+        variant: "destructive",
+      });
+    }
+  } catch (error) {
+    toast({
+      title: "Network error!",
+      description: "Could not send message. Try again later.",
+      variant: "destructive",
+    });
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
-    
-  };
 
   return (
     <section id="contact" className="py-20 relative">
@@ -106,11 +132,11 @@ const Contact: React.FC = () => {
                 <form onSubmit={handleSubmit}>
                   <div className="space-y-6">
                     <div>
-                      <label className="block text-sm font-medium text-white/80 mb-2 font-rajdhani">Name</label>
+                      <label className="block text-sm font-medium text-white/80 mb-2 font-rajdhani">Full Name</label>
                       <input 
                         type="text"
-                        name="name" 
-                        value={formData.name}
+                        name="fullName" 
+                        value={formData.fullName}
                         onChange={handleChange}
                         required
                         className={cn(
